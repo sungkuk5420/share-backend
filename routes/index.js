@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 /* GET home page. */
 router.get('/test-callback', function(req, res, next) {
 
-  console.log(res)
+  console.log(req.query)
   res.render('index', { title: 'Express' });
 });
 
